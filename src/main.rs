@@ -8,6 +8,7 @@ struct Person {
 }
 
 fn main() -> Result<()> {
+    print!("Hello world database");
     let conn = Connection::open_in_memory()?;
 
     conn.execute(
